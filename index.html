@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>产品经理入门课 · 从需求到上线</title>
+  <meta name="description" content="产品经理入门课：11 个模块、38 节课，从角色、用户与需求，到体验设计、数据指标、规划协作与求职作品集。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-mark">产品<span>必修</span></span></div>
+      <div class="brand-sub">For Product Managers</div>
+
+      <div class="progress-wrap">
+        <div class="progress-label"><span>学习进度</span><span id="progressText">0 / 0</span></div>
+        <div class="progress-bar"><i id="progressFill"></i></div>
+      </div>
+
+      <nav id="nav"></nav>
+
+      <div class="sidebar-foot">
+        <a href="#/">课程首页</a> · <a href="#/cases">案例目录</a><br />
+        <a href="#/library">方法库</a> · <a href="#/studies">深度案例</a> · <a href="#/review">复习</a> · <a href="#/toolkit">工具箱</a><br />
+        内容整理自 6 本产品书、NN/g、GOV.UK、Ant Design、IxDF
+      </div>
+    </aside>
+
+    <main>
+      <div class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开目录">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          目录
+        </button>
+        <div class="crumb" id="crumb"></div>
+        <div class="spacer"></div>
+        <button class="icon-btn" id="resetBtn" title="清除本机学习进度">重置进度</button>
+      </div>
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="data.js"></script>
+  <script src="cases-data.js"></script>
+  <script src="data-research.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
